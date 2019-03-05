@@ -1,0 +1,21 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: ssl
+  version: latest
+- name: flask
+  version: latest
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: main.app
+
+env_variables:
+    REDIS_HOST: redis-19044.c9.us-east-1-4.ec2.cloud.redislabs.com
+    REDIS_PORT: 19044
+    REDIS_PASSWORD: 1bdG7Dtu4HzlXGiGw97mzFg3SMlf0fIA
+    AUTH_TOKEN: Mzg3NTYzYzEtOTA4MS00YWVkLWEwNDItZjFhZTRiYzIxM2Ux

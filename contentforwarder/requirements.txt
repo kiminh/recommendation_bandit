@@ -1,0 +1,14 @@
+Flask
+gunicorn
+bs4
+redis
+requests
+flask_wtf
+requests_toolbelt
+gcloud
+google-cloud-datastore
+sklearn
+pandas
+beautifulsoup4
+cloudstorage
+google-cloud-storage
